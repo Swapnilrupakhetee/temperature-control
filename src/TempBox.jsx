@@ -11,6 +11,9 @@ function TempBox() {
     if(temp>=20){
       setColorChange("temp-value-high")
     }
+    if(temp===30){
+      setTemp(temp);
+    }
 
 
   }
@@ -18,6 +21,10 @@ function TempBox() {
     setTemp(temp-1);
     if(temp<=19){
       setColorChange("temp-value")
+    }
+    if(temp<=0)
+    {
+      setTemp(temp);
     }
 
   }
